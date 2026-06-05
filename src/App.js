@@ -63,7 +63,10 @@ export default App;
 
 // [ Modo propriedades! - Desestruturação! ]
 
+import React from 'react';
 import './App.css';
+import { Counter } from './compenents/counter';
+
 
 function Header({ title, subtitle, tagline, taglineClass }) {
   return (
@@ -81,8 +84,10 @@ function App() {
         title="Welcome to My React App!"
         subtitle="This is a simple React application"
         tagline="npm start"
-        taglineClass="tagline"
-      />
+        taglineClass="tagline"/>
+        <hr />
+        <Counter />
+        <hr />     
     </div>
   );
 }
